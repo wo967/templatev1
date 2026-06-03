@@ -1,0 +1,19 @@
+Name: user-api
+Host: 0.0.0.0
+Port: 8888
+
+# 直接指定 RPC 服务地址（本地开发）
+# 如果后面引入微服务概念，调用其他服务，则需要配置为注册中心地址，例如 etcd 地址
+UserRpc:
+  Target: 127.0.0.1:8083
+Middlewares:
+  Breaker: true
+  Log: true #默认不设置为自动开启状态
+# 添加日志配置
+Log:
+  Mode: file                            # 开启文件日志
+  Path: logs          # 日志存放路径（相对路径）
+  Level: info                           # 日志级别
+  Compress: true                        # 是否压缩旧日志
+  KeepDays: 7                           # 日志保留天数
+  StackCooldownMillis: 1000             # 堆栈信息冷却时间，防止日志刷屏

@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package template;
+option go_package = "./template";
+
+// 注册请求
+message RegisterRequest {
+  string username = 1;  // 用户名
+  string password = 2;  // 密码
+}
+
+// 注册响应
+message RegisterResponse {
+  bool success = 1;      // 是否成功
+  string message = 2;    // 响应消息
+  int64 userId = 3;      // 用户ID
+}
+
+// 登录请求
+message LoginRequest {
+  string username = 1;  // 用户名
+  string password = 2;  // 密码
+}
+
+// 登录响应
+message LoginResponse {
+  string token = 1;      // JWT Token
+  int64 userId = 2;      // 用户ID
+  string username = 3;   // 用户名
+  int64 expireAt = 4;    // 过期时间戳
+}
+
+// ==================== 服务定义 ====================
+
+// 用户服务
+service User {
+  // 用户注册
+  rpc Register(RegisterRequest) returns (RegisterResponse);
+
+  // 用户登录
+  rpc Login(LoginRequest) returns (LoginResponse);
+}

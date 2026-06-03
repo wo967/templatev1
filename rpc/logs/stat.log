@@ -1,0 +1,13 @@
+{"@timestamp":"2026-04-06T00:36:22.848+08:00","caller":"stat/usage.go:61","content":"CPU: 0m, MEMORY: Alloc=3.7Mi, TotalAlloc=5.1Mi, Sys=14.0Mi, NumGC=2","level":"stat"}
+{"@timestamp":"2026-04-06T00:36:22.868+08:00","caller":"load/sheddingstat.go:61","content":"(rpc) shedding_stat [1m], cpu: 0, total: 0, pass: 0, drop: 0","level":"stat"}
+{"@timestamp":"2026-04-06T00:37:26.136+08:00","caller":"load/sheddingstat.go:61","content":"(rpc) shedding_stat [1m], cpu: 0, total: 1, pass: 0, drop: 0","level":"stat"}
+{"@timestamp":"2026-04-06T00:37:26.156+08:00","caller":"stat/usage.go:61","content":"CPU: 0m, MEMORY: Alloc=3.9Mi, TotalAlloc=5.3Mi, Sys=18.5Mi, NumGC=2","level":"stat"}
+{"@timestamp":"2026-04-06T00:43:48.252+08:00","caller":"stat/usage.go:61","content":"CPU: 0m, MEMORY: Alloc=3.1Mi, TotalAlloc=5.4Mi, Sys=19.0Mi, NumGC=3","level":"stat"}
+{"@timestamp":"2026-04-06T00:43:48.248+08:00","caller":"load/sheddingstat.go:61","content":"(rpc) shedding_stat [1m], cpu: 0, total: 0, pass: 1, drop: 0","level":"stat"}
+{"@timestamp":"2026-04-06T00:43:48.260+08:00","caller":"stat/metrics.go:210","content":"(template.rpc) - qps: 0.0/s, drops: 0, avg time: 7931.0ms, med: 7931.7ms, 90th: 7931.7ms, 99th: 7931.7ms, 99.9th: 7931.7ms","level":"stat"}
+{"@timestamp":"2026-04-06T00:48:05.326+08:00","caller":"stat/metrics.go:210","content":"(template.rpc) - qps: 0.0/s, drops: 0, avg time: 0.0ms, med: 0.0ms, 90th: 0.0ms, 99th: 0.0ms, 99.9th: 0.0ms","level":"stat"}
+{"@timestamp":"2026-04-06T00:48:05.326+08:00","caller":"stat/usage.go:61","content":"CPU: 0m, MEMORY: Alloc=3.1Mi, TotalAlloc=5.4Mi, Sys=19.3Mi, NumGC=3","level":"stat"}
+{"@timestamp":"2026-04-06T00:48:05.326+08:00","caller":"load/sheddingstat.go:61","content":"(rpc) shedding_stat [1m], cpu: 0, total: 0, pass: 0, drop: 0","level":"stat"}
+{"@timestamp":"2026-04-06T00:48:22.848+08:00","caller":"stat/usage.go:61","content":"CPU: 0m, MEMORY: Alloc=3.8Mi, TotalAlloc=6.1Mi, Sys=19.3Mi, NumGC=4","level":"stat"}
+{"@timestamp":"2026-04-06T00:48:22.868+08:00","caller":"load/sheddingstat.go:61","content":"(rpc) shedding_stat [1m], cpu: 0, total: 1, pass: 1, drop: 0","level":"stat"}
+{"@timestamp":"2026-04-06T00:48:26.172+08:00","caller":"stat/metrics.go:210","content":"(template.rpc) - qps: 0.0/s, drops: 0, avg time: 3.0ms, med: 3.2ms, 90th: 3.2ms, 99th: 3.2ms, 99.9th: 3.2ms","level":"stat"}

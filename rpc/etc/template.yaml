@@ -1,0 +1,16 @@
+Name: template.rpc
+ListenOn: 0.0.0.0:8083
+#Etcd:
+#  Hosts:
+#  - 127.0.0.1:2379
+#  Key: template.rpc
+Mysql:
+  datasource: "root:myLyx@tcp(127.0.0.1:3306)/lyx?charset=utf8mb4&parseTime=True&loc=Local"
+  connectTimeout: 5
+Log:
+  Mode: file                            # 开启文件日志
+  Path: logs                            # 日志存放路径（相对路径）
+  Level: info                           # 日志级别
+  Compress: true                        # 是否压缩旧日志
+  KeepDays: 7                           # 日志保留天数
+  StackCooldownMillis: 1000             # 堆栈信息冷却时间，防止日志刷屏
